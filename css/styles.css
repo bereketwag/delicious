@@ -1,0 +1,373 @@
+/* Global Styles */
+body {
+    background-color: #1c1c1c; /* Deeper dark background */
+    color: #ffffff; /* White text color */
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #141414; /* Dark background */
+    padding: 15px;
+    z-index: 1000; /* Ensure navbar is above other content */
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ensures alignment */
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 50px; /* Adjust based on your logo's size */
+    margin-right: 10px; /* Space between logo and text */
+}
+
+.logo-text {
+    color: #f5bc36; /* Light pink color */
+    font-size: 24px; /* Adjust font size as needed */
+    font-family: 'Pacifico', cursive; /* Apply delicious font */
+}
+
+/* Menu Styling */
+.navbar-collapse {
+    flex-grow: 1;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    margin: 0; /* Remove default margin */
+}
+
+.navbar-nav .nav-link {
+    color: #f5bc36; /* Brighter light pink */
+    font-size: 16px;
+    transition: color 0.3s ease; /* Add transition effect */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffae6d; /* Richer light orange */
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #f5bc36; /* Brighter light pink */
+    border-color: #f5bc36;
+    color: #1c1c1c; /* Darker text */
+}
+
+.btn-primary:hover {
+    background-color: #ffae6d; /* Richer light orange */
+    border-color: #ffae6d;
+    color: #ffffff;
+}
+
+/* Ensure proper spacing and alignment */
+@media (max-width: 991px) {
+    .navbar-nav {
+        text-align: center;
+        margin-top: 15px;
+    }
+}
+
+/* Hero Section Styling */
+.hero-section {
+    height: 100vh;
+    background-color: #1c1c1c; /* Dark background */
+    color: #ffffff;
+    padding: 60px 0;
+}
+
+.hero-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 30px;
+}
+
+.hero-description h1 {
+    font-family: 'Pacifico', cursive; /* Delicious font */
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.testing {
+    font-family: "New Amsterdam", sans-serif; /* Delicious font */
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+.hero-description p {
+    font-family: "New Amsterdam", sans-serif; /* Delicious font */
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+.hero-images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-images img {
+    max-width: 100%;
+    height: auto;
+}
+
+.carousel-inner img {
+    border-radius: 10px;
+    max-height: 80vh;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #f5bc36; /* Accent pink */
+    border-radius: 50%;
+    padding: 10px;
+}
+
+/* Featured Cakes Section */
+.featured-cakes {
+    background-color: #1f1f1f; /* Dark background */
+    padding: 60px 0;
+}
+
+.featured-cakes .card {
+    background-color: #3e3e3e; /* Dark card background */
+    border: none;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Added shadow */
+}
+
+.featured-cakes .card:hover {
+    transform: scale(1.05);
+}
+
+.featured-cakes .card-title,
+.featured-cakes .card-text {
+    color: #ffadb0; /* Light pink text */
+}
+
+.featured-cakes .btn-dark {
+    background-color: #ffae6d; /* Light orange */
+    border-color: #ffae6d;
+    color: #ffffff;
+}
+
+.featured-cakes .btn-dark:hover {
+    background-color: #ffadb0; /* Light pink */
+    border-color: #ffadb0;
+    color: #1f1f1f;
+}
+
+/* Center Cards */
+.row {
+    justify-content: center; /* Aligns the cards in the center */
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991px) {
+    .card {
+        margin-bottom: 30px;
+    }
+}
+
+/* Testimonials Section */
+.testimonials {
+    background-color: #1f1f1f; /* Dark background */
+    color: #ffffff; /* White text color */
+    padding-bottom: 50px;
+}
+
+.testimonials h2 {
+    color: #f7941d; /* Light orange heading */
+    margin-bottom: 40px;
+    text-align: center; /* Center the title */
+}
+
+/* Testimonial Cards */
+.testimonial {
+    background-color: #2a2a2a; /* Slightly lighter dark background */
+    color: #f7c8d6; /* Light pink text */
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    margin-bottom: 20px; /* Added space between testimonials */
+    padding: 20px; /* Added padding */
+}
+
+.testimonial:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.testimonial p {
+    font-style: italic;
+    color: #ffffff; /* White for the quotes */
+}
+
+.testimonial h5 {
+    margin-top: 15px;
+    color: #f7941d; /* Light orange for names */
+    font-weight: bold;
+}
+
+.testimonial span {
+    color: #f7c8d6; /* Light pink for role */
+}
+
+/* Mobile Responsive Adjustments */
+@media (max-width: 768px) {
+    .testimonials h2 {
+        text-align: center;
+        margin-bottom: 20px; /* Reduce margin for mobile */
+        order: -1; /* Move the title to the top */
+    }
+
+    .testimonials .row {
+        display: block; /* Stack testimonials in a list */
+    }
+
+    .testimonial {
+        text-align: left; /* Align text to the left for list view */
+        padding: 20px; /* Add padding for better mobile display */
+        font-size: 0.9rem; /* Adjust font size */
+    }
+
+    .testimonial p,
+    .testimonial h5,
+    .testimonial span {
+        text-align: left; /* Ensure all text is aligned to the left */
+    }
+}
+
+/* Special Offers Section */
+.special-offers {
+    background-color: #2a2a2a; /* Dark background */
+    color: #f7c8d6; /* Light pink text */
+    padding: 60px 0;
+}
+
+.special-offers .section-title {
+    color: #f7941d; /* Light orange for title */
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.special-offers .offer-card {
+    background-color: #1f1f1f; /* Darker background for cards */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Newsletter Section */
+.newsletter-section {
+    background-color: #1f1f1f; /* Dark background */
+    color: #ffffff; /* White text */
+    padding: 60px 0;
+}
+
+.newsletter-form {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto; /* Center form horizontally */
+}
+
+.newsletter-form .form-group {
+    width: 100%; /* Full width for form groups */
+    margin-bottom: 15px; /* Space between elements */
+}
+
+.newsletter-form .form-control {
+    width: 100%; /* Full width for input field */
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+    background-color: #333333; /* Dark input background */
+    color: #ffffff; /* White text color */
+}
+
+.newsletter-form .form-control::placeholder {
+    color: #888888; /* Lighter gray for placeholder */
+}
+
+.newsletter-form .btn-primary {
+    width: 100%; /* Full width button */
+    padding: 15px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    background-color: #f5bc36; /* Accent pink */
+    border-color: #f5bc36;
+    color: #1c1c1c; /* Dark text color */
+    transition: background-color 0.3s ease;
+}
+
+.newsletter-form .btn-primary:hover {
+    background-color: #ffae6d; /* Hover effect color */
+    border-color: #ffae6d;
+    color: #ffffff;
+}
+
+.newsletter-section .section-title {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #f7941d; /* Light orange for title */
+}
+
+@media (max-width: 768px) {
+    .newsletter-section .section-title {
+        font-size: 2rem; /* Adjust font size for mobile */
+    }
+
+    .newsletter-form .form-control {
+        padding: 12px;
+    }
+
+    .newsletter-form .btn-primary {
+        font-size: 1rem;
+        padding: 12px;
+    }
+}
+
+
+/* Footer Section */
+.footer {
+    background-color: #141414; /* Dark background */
+    color: #ffffff; /* White text */
+    padding: 20px;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer {
+        padding: 15px; /* Reduce padding for mobile view */
+    }
+
+    .newsletter-section .section-title {
+        font-size: 2rem; /* Adjust font size */
+    }
+
+    .newsletter-form .btn-primary {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
